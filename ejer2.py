@@ -1,15 +1,13 @@
-from email import charset
-import string
-
-contador=0
 texto=input('ingrese palabra: ')
 alfabeto= ('AaBbCcDdEeFfGgHhIiJjKkLlMmNnÑñOoPpQqRrSsTtUuVvWwXxYyZz')
+contador=0
 
 for i in texto:
-    if i in alfabeto:
+    if texto in alfabeto:
         contador+=1
-        
+
     else:
-        print('Todos los carcteres no son alfabeticos')
+        print("no todos los carcteres son alfabeticos")
+        break
 if contador==len(texto):
-    print('todos los caracteres son alfabeticos')
+        print("todos los caracteres son alfabeticos")
